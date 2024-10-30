@@ -5,7 +5,7 @@ import { Experiment } from "./Experiment";
 import { Modal } from "components/ui/Modal";
 import { SUNNYSIDE } from "assets/sunnyside";
 import { PIXEL_SCALE } from "features/game/lib/constants";
-import { pixelRoomBorderStyle } from "features/game/lib/style";
+import { pixelHalloweenRoomBorderStyle } from "features/game/lib/style";
 import { Rules } from "./Rules";
 import {
   PotionHouseMachineInterpreter,
@@ -33,10 +33,11 @@ export const PotionHouse: React.FC<Props> = ({ onClose }) => {
   return (
     <Modal show onHide={onClose}>
       <div
-        className="bg-brown-600  relative"
+        className=" relative"
         style={{
-          ...pixelRoomBorderStyle,
+          ...pixelHalloweenRoomBorderStyle,
           padding: `${PIXEL_SCALE * 1}px`,
+          background: "#3A4466",
         }}
       >
         <div id="cover" />

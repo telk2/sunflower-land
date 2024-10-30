@@ -143,7 +143,9 @@ export const MixingPotion: React.FC<{
   return (
     <div className="flex flex-col items-center justify-evenly relative w-full h-full">
       <div className="min-h-[120px] sm:min-h-[80px] flex flex-col items-center">
-        {feedbackText && <SpeechBubble text={feedbackText} className="w-4/5" />}
+        {feedbackText && (
+          <SpeechBubble text={feedbackText} className="w-4/5 text-yellow-900" />
+        )}
       </div>
       {loaded && currentAnimation === "idle" && (
         <Spritesheet

@@ -11,7 +11,6 @@ import increase_arrow from "assets/icons/increase_arrow.png";
 import decrease_arrow from "assets/icons/decrease_arrow.png";
 import { PIXEL_SCALE } from "features/game/lib/constants";
 import { SquareIcon } from "./SquareIcon";
-import { SUNNYSIDE } from "assets/sunnyside";
 import { useSound } from "lib/utils/hooks/useSound";
 
 interface Props {
@@ -54,7 +53,7 @@ export const ListingCategoryCard: React.FC<Props> = ({
         },
       )}
       style={{
-        borderImage: `url(${SUNNYSIDE.ui.primaryButton})`,
+        borderImage: `url(/world/halloweenButton.png)`,
         borderStyle: "solid",
         borderWidth: `8px 8px 10px 8px`,
         borderImageSlice: "3 3 4 3 fill",

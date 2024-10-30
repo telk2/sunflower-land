@@ -142,3 +142,13 @@ export const pixelHalloweenTabBorderMiddleStyle2: React.CSSProperties = {
   ...pixelizedBorderStyle,
   borderRadius: `${PIXEL_SCALE * 5}px ${PIXEL_SCALE * 5}px 0 0`,
 };
+
+export const pixelHalloweenRoomBorderStyle: React.CSSProperties = {
+  borderImage: `url(/world/halloween_room_border.png)`,
+  borderStyle: "solid",
+  borderWidth: `${PIXEL_SCALE * 6}px`,
+  borderImageSlice: "20%",
+  imageRendering: "pixelated",
+  borderImageRepeat: "stretch",
+  borderRadius: `${PIXEL_SCALE * 8}px`,
+};
