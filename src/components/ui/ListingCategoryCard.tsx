@@ -53,7 +53,7 @@ export const ListingCategoryCard: React.FC<Props> = ({
         },
       )}
       style={{
-        borderImage: `url(/world/halloweenButton.png)`,
+        borderImage: `url(src/assets/ui/halloweenButton.png)`,
         borderStyle: "solid",
         borderWidth: `8px 8px 10px 8px`,
         borderImageSlice: "3 3 4 3 fill",
