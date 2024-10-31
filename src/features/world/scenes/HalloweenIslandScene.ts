@@ -218,8 +218,7 @@ export class HalloweenIslandScene extends BaseScene {
       .setInteractive({ cursor: "pointer" })
       .on("pointerdown", () => {
         if (this.checkDistanceToSprite(halloween_portal_entrance, 40)) {
-          interactableModalManager.open("chicken_rescue");
-          //Change to the right portal
+          interactableModalManager.open("halloween");
         } else {
           this.currentPlayer?.speak(translate("base.iam.far.away"));
         }
